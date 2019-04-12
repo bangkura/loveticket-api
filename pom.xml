@@ -9,8 +9,8 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.bangkura</groupId>
-    <artifactId>loveticket</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <artifactId>loveticket-api</artifactId>
+    <version>0.0.1</version>
     <name>loveticket</name>
     <description>backend api for loveticket</description>
 

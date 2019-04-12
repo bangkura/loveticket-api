@@ -2,6 +2,7 @@ pipeline {
     agent any
     tools {
         maven 'Default'
+        docker 'Default'
     }
     stages {
         stage ('Initialize') {

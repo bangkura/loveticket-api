@@ -1,8 +1,7 @@
 pipeline {
-    agent any
+     agent { dockerfile true }
     tools {
         maven 'Default'
-        docker 'Default'
     }
     stages {
         stage ('Initialize') {

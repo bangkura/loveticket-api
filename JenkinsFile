@@ -27,6 +27,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'deploy the project'
+                sh 'systemctl start docker'
                 sh 'docker build -t loveticket-api . '
             }
         }

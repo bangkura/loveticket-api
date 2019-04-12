@@ -6,17 +6,27 @@ pipeline {
     stages {
         stage ('Initialize') {
             steps {
-                sh '''
-                    echo "PATH = ${PATH}"
-                    echo "M2_HOME = ${M2_HOME}"
-                '''
+                echo 'starting the deploy'
             }
         }
 
         stage ('Build') {
             steps {
-                echo 'This is a minimal pipeline.'
+                echo 'compile the project'
                 sh 'mvn clean compile'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo 'test the project'
+                sh 'mvn test'
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                echo 'deploy the project'
             }
         }
     }

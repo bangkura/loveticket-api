@@ -26,9 +26,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                script {
-                    docker.build
-                }
+                sh 'docker -v'
             }
         }
     }

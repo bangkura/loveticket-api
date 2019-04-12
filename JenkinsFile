@@ -27,7 +27,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh 'docker -v'
-                sh 'systemctl start docker'
+                sh 'docker ps'
             }
         }
     }

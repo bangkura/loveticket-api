@@ -27,7 +27,8 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh 'mvn package'
-                sh 'docker build -t loveticket .'
+                sh 'docker build -t 149.248.12.152:5000/loveticket  .'
+                sh 'docker push 149.248.12.152:5000/loveticket'
             }
         }
     }

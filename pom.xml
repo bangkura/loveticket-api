@@ -9,8 +9,8 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.bangkura</groupId>
-    <artifactId>loveticket-api</artifactId>
-    <version>0.0.1</version>
+    <artifactId>loveticket</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
     <name>loveticket</name>
     <description>backend api for loveticket</description>
 
@@ -32,6 +32,7 @@
     </dependencies>
 
     <build>
+        <finalName>loveticket-api</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

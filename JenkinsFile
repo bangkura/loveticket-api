@@ -31,5 +31,12 @@ pipeline {
                 sh 'docker push 149.248.12.152:5000/loveticket'
             }
         }
+
+        stage('Run') {
+            steps {
+                sh 'docker rm -f loveticket'
+                sh 'docker run -d --name loveticket -p 8888:8080 149.248.12.152:5000/loveticket'
+            }
+        }
     }
 }

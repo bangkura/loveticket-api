@@ -34,6 +34,7 @@ pipeline {
 
         stage('Run') {
             steps {
+                sh 'docker stop loveticket'
                 sh 'docker rm loveticket'
                 sh 'docker run -d --name loveticket -p 8888:8080 149.248.12.152:5000/loveticket'
             }

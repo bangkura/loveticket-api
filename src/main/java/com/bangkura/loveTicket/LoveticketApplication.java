@@ -1,4 +1,4 @@
-package com.bangkura.loveticket;
+package com.bangkura.loveTicket;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
